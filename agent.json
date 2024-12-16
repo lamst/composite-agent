@@ -1,0 +1,16 @@
+{
+  "displayName": "Composite Agent",
+  "defaultLanguageCode": "en",
+  "timeZone": "Asia/Hong_Kong",
+  "projectNumber": 458128183415,
+  "startFlow": "Start Flow",
+  "advancedSettings": {
+    "loggingSettings": {
+    
+    }
+  },
+  "dataResidencyOption": "DATA_RESIDENCY_IN_USE_COMPLIANT",
+  "genAppBuilderSettings": {
+    "engine": "projects/458128183415/locations/global/collections/default_collection/engines/9a7930f4-323b-483f-b71a-8272a844e5fd"
+  }
+}

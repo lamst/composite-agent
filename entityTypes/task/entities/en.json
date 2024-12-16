@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "Forecast",
+    "synonyms": [ "Climate", "Humidity", "Temperature", "Weather" ],
+    "languageCode": "en"
+  }, {
+    "value": "Alphabet",
+    "synonyms": [ "Alphabet", "DeepMind", "Gemini", "Gmail", "Google", "Google Ads", "Google Maps", "Waymo", "YouTube" ],
+    "languageCode": "en"
+  } ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "7f8c7c20-fe78-421b-9c16-632649cae497",
+  "displayName": "alphabet_financials",
+  "dataStoreSpec": {
+    "dataStoreConnections": [ {
+      "dataStoreType": "UNSTRUCTURED",
+      "dataStore": "projects/458128183415/locations/global/collections/default_collection/dataStores/alphabet-financials-global_1730448237955",
+      "documentProcessingMode": "CHUNKS"
+    } ],
+    "models": {
+      "summarizationModel": {
+        "model": "gemini_15_flash_002"
+      }
+    },
+    "fallbackPrompt": {
+      "company": "Google Cloud"
+    },
+    "groundingSettings": {
+      "groundingConfidence": "MEDIUM"
+    },
+    "payloadSettings": {
+    
+    }
+  },
+  "toolType": "CUSTOMIZED_TOOL"
+}

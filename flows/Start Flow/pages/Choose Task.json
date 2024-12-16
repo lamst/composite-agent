@@ -1,0 +1,54 @@
+{
+  "name": "3ac0b028-7fef-4adf-90c8-c99716eebd25",
+  "displayName": "Choose Task",
+  "form": {
+    "parameters": [ {
+      "displayName": "task",
+      "required": true,
+      "entityType": "@task",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Alphabet or weather", "Google or forecast" ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Hi there, I am a demo conversational agent with the following capabilities:\n\n-  Tell you about the financial performance of Alphabet\n-  Provide weather forecast\n\nPlease let me know which you'd like to experience." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.conversation_state = \"COMPLETED\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Bye now!", "Have a good one!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "[Session Ended]\nTo start over, say \"hello\" or \"hey\"" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "a2dc8f03-f073-4d75-82c2-89ce7a3ea22f"
+  }, {
+    "condition": "$session.params.task = Alphabet AND $page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+    
+    },
+    "name": "f8b93e2b-4eb5-49f7-ab9d-6a203e722ca3",
+    "targetPlaybook": "Alphabet Financial Result Assistant"
+  } ]
+}

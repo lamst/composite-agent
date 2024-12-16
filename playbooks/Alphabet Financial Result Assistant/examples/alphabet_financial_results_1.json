@@ -1,0 +1,50 @@
+{
+  "name": "773a889d-e0da-493f-8361-3c9264443451",
+  "actions": [ {
+    "agentUtterance": {
+      "text": "Hi there! How can I help you today?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "revenue in 2023"
+    }
+  }, {
+    "toolUse": {
+      "tool": "alphabet_financials",
+      "action": "alphabet_financials",
+      "inputActionParameters": {
+        "requestBody": {
+          "fallback": "Sorry, I do not have access to real-time information.",
+          "query": "What was Alphabet's revenue in 2023?"
+        }
+      },
+      "outputActionParameters": {
+        "200": {
+          "answer": "Alphabet Inc. reported total revenues of $307,394 million in 2023.  This includes:\n\n- Google Services: $253,528 million\n- Google Cloud: $26,280 million\n- Other Bets: $1,068 million"
+        }
+      }
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Alphabet Inc. reported total revenues of $307,394 million in 2023.  This includes:\n\n- Google Services: $253,528 million\n- Google Cloud: $26,280 million\n- Other Bets: $1,068 million\n\nIs there anything else I can help you with today?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "that's it"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Bye for now.  Feel free to reach out if you need."
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "The user wants to find out the financial results of Alphabet."
+  },
+  "playbookOutput": {
+    "executionSummary": "The agent provided answers to related to the financial performance of Alphabet and set the parameter conversation_state to COMPLETED"
+  },
+  "displayName": "alphabet_financial_results_1",
+  "retrievalStrategy": "STATIC",
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "en"
+}
