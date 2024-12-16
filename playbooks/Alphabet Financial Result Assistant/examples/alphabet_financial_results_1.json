@@ -41,7 +41,11 @@
     "precedingConversationSummary": "The user wants to find out the financial results of Alphabet."
   },
   "playbookOutput": {
-    "executionSummary": "The agent provided answers to related to the financial performance of Alphabet and set the parameter conversation_state to COMPLETED"
+    "executionSummary": "The agent provided answers to related to the financial performance of Alphabet",
+    "actionParameters": {
+      "conversation-state": "COMPLETED",
+      "task": "NONE"
+    }
   },
   "displayName": "alphabet_financial_results_1",
   "retrievalStrategy": "STATIC",

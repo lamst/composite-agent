@@ -20,7 +20,7 @@
       "steps": [ {
         "text": "YES: start over and ask for the next question about the financial performance of Alphabet"
       }, {
-        "text": "NO: Thank the user, set the parameter conversation_state to COMPLETED and end the session."
+        "text": "NO: Thank the user, set the parameter conversation_state to COMPLETED, task to NONE and end the session."
       } ]
     } ]
   },
