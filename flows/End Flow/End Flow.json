@@ -1,14 +1,22 @@
 {
-  "name": "00000000-0000-0000-0000-000000000000",
-  "displayName": "Start Flow",
-  "description": "A start flow created along with the agent",
+  "name": "6cdade84-0221-45ae-ac9d-84ef91b523a1",
+  "displayName": "End Flow",
   "transitionRoutes": [ {
-    "intent": "Default Welcome Intent",
+    "condition": "$session.params.conversation-state = COMPLETED",
     "triggerFulfillment": {
-    
+      "messages": [ {
+        "text": {
+          "text": [ "[Session ended]\nTo start over, say \"hello\" or \"hey\"" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "conversation-state",
+        "value": ""
+      } ]
     },
-    "targetPage": "Choose Task",
-    "name": "d5bfe416-c588-4fa5-b142-842ebf8a3067"
+    "targetFlow": "Start Flow",
+    "name": "e5bb331e-fcef-4ea7-905c-ea05ede254d5"
   } ],
   "eventHandlers": [ {
     "event": "sys.no-match-default",
@@ -20,7 +28,7 @@
         "languageCode": "en"
       } ]
     },
-    "name": "cef065bc-9472-4a12-a017-6ae20be57b34"
+    "name": "c9d44c35-d74d-4dda-b5e4-f79550bdb40a"
   }, {
     "event": "sys.no-input-default",
     "triggerFulfillment": {
@@ -31,33 +39,16 @@
         "languageCode": "en"
       } ]
     },
-    "name": "b2fcbafe-8379-4cf1-b0e2-27af34138b48"
-  }, {
-    "targetPage": "End Session",
-    "event": "webhook.error",
-    "triggerFulfillment": {
-    
-    },
-    "name": "47c8f637-0f81-45e4-9c84-2d4812f11ad9"
+    "name": "5e3eb4cc-f506-4e3b-91b6-1935ddf1acdd"
   } ],
   "nluSettings": {
     "modelType": "MODEL_TYPE_ADVANCED",
-    "classificationThreshold": 0.30000001,
-    "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC",
-    "multiIntentSettings": {
-    
-    }
-  },
-  "advancedSettings": {
-    "enabled": true
+    "classificationThreshold": 0.30000001
   },
   "nluSettingsList": [ {
     "modelType": "MODEL_TYPE_ADVANCED",
     "classificationThreshold": 0.30000001,
-    "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC",
-    "multiIntentSettings": {
-    
-    },
+    "customConfigKey": "eab2f561-893c-48bc-976e-07529dd08704",
     "languageCode": "en"
   } ]
 }
