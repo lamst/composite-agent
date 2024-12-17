@@ -1,10 +1,6 @@
 {
   "name": "773a889d-e0da-493f-8361-3c9264443451",
   "actions": [ {
-    "agentUtterance": {
-      "text": "Hi there! How can I help you today?"
-    }
-  }, {
     "userUtterance": {
       "text": "revenue in 2023"
     }

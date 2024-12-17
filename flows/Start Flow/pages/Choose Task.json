@@ -27,7 +27,7 @@
     } ]
   },
   "transitionRoutes": [ {
-    "condition": "$session.params.conversation_state = \"COMPLETED\"",
+    "condition": "$session.params.conversation_state = COMPLETED",
     "triggerFulfillment": {
       "messages": [ {
         "text": {
@@ -44,7 +44,7 @@
     "targetPage": "End Session",
     "name": "a2dc8f03-f073-4d75-82c2-89ce7a3ea22f"
   }, {
-    "condition": "$session.params.task = Alphabet AND $page.params.status = \"FINAL\"",
+    "condition": "$session.params.task = Alphabet AND $page.params.status = FINAL",
     "triggerFulfillment": {
     
     },
