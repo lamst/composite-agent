@@ -18,6 +18,14 @@
         "type": "STRING"
       }
     }
+  }, {
+    "name": "status",
+    "description": "The status of the parameters in a page.",
+    "typeSchema": {
+      "inlineSchema": {
+        "type": "STRING"
+      }
+    }
   } ],
   "tokenCount": 188,
   "referencedTools": [ "alphabet_financials" ],
@@ -37,7 +45,7 @@
       "steps": [ {
         "text": "YES: start over and ask for the next question about the financial performance of Alphabet"
       }, {
-        "text": "NO: Thank the user, set the parameter conversation_state to COMPLETED, task to empty and end the conversation"
+        "text": "NO: Thank the user, set the conversation_state to COMPLETED, task to empty, status to UPDATED and end the conversation"
       } ]
     } ]
   },

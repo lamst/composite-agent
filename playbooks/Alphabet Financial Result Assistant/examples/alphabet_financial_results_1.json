@@ -34,7 +34,7 @@
     }
   }, {
     "agentUtterance": {
-      "text": "Bye for now.  Feel free to reach out if you need."
+      "text": "Feel free to reach out if you need."
     }
   } ],
   "playbookInput": {
@@ -43,7 +43,9 @@
   "playbookOutput": {
     "executionSummary": "The agent provided answers to related to the financial performance of Alphabet",
     "actionParameters": {
-      "conversation-state": "COMPLETED"
+      "conversation-state": "COMPLETED",
+      "task": "",
+      "status": "UPDATED"
     }
   },
   "displayName": "alphabet_financial_results_1",
