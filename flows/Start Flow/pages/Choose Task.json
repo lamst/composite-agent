@@ -27,7 +27,7 @@
     } ]
   },
   "transitionRoutes": [ {
-    "condition": "$session.params.conversation_state = COMPLETED",
+    "condition": "$session.params.conversation-state = \"COMPLETED\"",
     "triggerFulfillment": {
       "messages": [ {
         "text": {
@@ -36,7 +36,7 @@
         "languageCode": "en"
       }, {
         "text": {
-          "text": [ "[Session Ended]\nTo start over, say \"hello\" or \"hey\"" ]
+          "text": [ "[Session ended]\nTo start over, say \"hello\" or \"hey\"" ]
         },
         "languageCode": "en"
       } ]

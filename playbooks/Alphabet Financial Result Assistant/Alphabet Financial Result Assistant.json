@@ -2,25 +2,6 @@
   "name": "6d75775f-6aa9-46ed-b56f-ad20767ca7b0",
   "displayName": "Alphabet Financial Result Assistant",
   "goal": "You provide information on the financial performance of Alphabet. You are helpful and direct in your response to the inquiries of Alphabet's financial performance.\n\nGENERAL INSTRUCTIONS\n- DO NOT greet the user, because they have already been greeted.",
-  "steps": [ {
-    "text": "Ask the user what do they want to know about the financial results of Alphabet."
-    }, {
-      "text": "Tell the user you cannot provide answer to questions outside of the financial performance of Alphabet."
-    }, {
-      "text": "Only use the information from ${TOOL:alphabet_financials} to formulate the answer."
-    }, {
-      "text": "Ask if the user has anything further:",
-      "steps": [ {
-        "text": "YES: start over and ask for the next question about the financial performance of Alphabet"
-      }, {
-        "text": "NO: Thank the user, set the parameter conversation_state to COMPLETED, task to null and end the conversation."
-      } ]
-  } ],
-  "referencedTools": [ "alphabet_financials" ],
-  "ragSettings": {
-    "enableRag": true,
-    "summaryAnswerOverrideType": "NON_BLOCKING_ANSWER"
-  },
   "outputParameterDefinitions": [ {
     "name": "conversation-state",
     "description": "The state of conversation.  \"COMPLETED\" if the conversation ended with no further actions required.",
@@ -38,6 +19,12 @@
       }
     }
   } ],
+  "tokenCount": 188,
+  "referencedTools": [ "alphabet_financials" ],
+  "ragSettings": {
+    "enableRag": true,
+    "summaryAnswerOverrideType": "NON_BLOCKING_ANSWER"
+  },
   "instruction": {
     "steps": [ {
       "text": "Ask the user what do they want to know about the financial results of Alphabet."
@@ -50,7 +37,7 @@
       "steps": [ {
         "text": "YES: start over and ask for the next question about the financial performance of Alphabet"
       }, {
-        "text": "NO: Thank the user, set the parameter conversation_state to COMPLETED, task to null and end the conversation."
+        "text": "NO: Thank the user, set the parameter conversation_state to COMPLETED, task to empty and end the conversation"
       } ]
     } ]
   },

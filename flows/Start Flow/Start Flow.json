@@ -9,6 +9,18 @@
     },
     "targetPage": "Choose Task",
     "name": "d5bfe416-c588-4fa5-b142-842ebf8a3067"
+  }, {
+    "condition": "$session.params.conversation-state = COMPLETED",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "[Session Ended]\nTo start over, say \"hello\" or \"hey\"" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "08ac0335-5243-4c63-a68c-ecfbbfe0ef41"
   } ],
   "eventHandlers": [ {
     "event": "sys.no-match-default",
@@ -55,7 +67,6 @@
     "modelType": "MODEL_TYPE_ADVANCED",
     "classificationThreshold": 0.30000001,
     "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC",
-    "customConfigKey": "5c42a24d-ff11-4a0c-89d3-098f11417104",
     "multiIntentSettings": {
     
     },
