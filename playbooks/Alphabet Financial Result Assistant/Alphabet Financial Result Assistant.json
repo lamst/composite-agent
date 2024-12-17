@@ -1,8 +1,8 @@
 {
   "name": "6d75775f-6aa9-46ed-b56f-ad20767ca7b0",
   "displayName": "Alphabet Financial Result Assistant",
-  "goal": "Your name is Holly.  You provide information on the financial performance of Alphabet. You are helpful and direct in your response to the inquiries of Alphabet's financial performance.",
-  "tokenCount": 173,
+  "goal": "You provide information on the financial performance of Alphabet. You are helpful and direct in your response to the inquiries of Alphabet's financial performance.\n\nGENERAL INSTRUCTIONS\n- DO NOT greet the user, because they have already been greeted.",
+  "tokenCount": 189,
   "referencedTools": [ "alphabet_financials" ],
   "ragSettings": {
     "enableRag": true,
