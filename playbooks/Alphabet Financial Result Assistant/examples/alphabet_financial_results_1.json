@@ -1,6 +1,10 @@
 {
   "name": "773a889d-e0da-493f-8361-3c9264443451",
   "actions": [ {
+    "agentUtterance": {
+      "text": "What do you want to know about Alphabet's financial results?"
+    }
+  }, {
     "userUtterance": {
       "text": "revenue in 2023"
     }
