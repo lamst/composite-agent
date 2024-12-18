@@ -3,24 +3,8 @@
   "displayName": "Alphabet Financial Result Assistant",
   "goal": "You provide information on the financial performance of Alphabet. You are helpful and direct in your response to the inquiries of Alphabet's financial performance.\n\nGENERAL INSTRUCTIONS\n- DO NOT greet the user, because they have already been greeted.",
   "outputParameterDefinitions": [ {
-    "name": "conversation-state",
-    "description": "The state of conversation.  \"COMPLETED\" if the conversation ended with no further actions required.",
-    "typeSchema": {
-      "inlineSchema": {
-        "type": "STRING"
-      }
-    }
-  }, {
     "name": "task",
     "description": "The task to perform in the conversation. For example, \"Alphabet\" if the conversation is to ask questions on the financial results of Alphabet.",
-    "typeSchema": {
-      "inlineSchema": {
-        "type": "STRING"
-      }
-    }
-  }, {
-    "name": "status",
-    "description": "The status of the parameters in a page.",
     "typeSchema": {
       "inlineSchema": {
         "type": "STRING"
@@ -45,7 +29,7 @@
       "steps": [ {
         "text": "YES: start over and ask for the next question about the financial performance of Alphabet"
       }, {
-        "text": "NO: Thank the user, set the parameters conversation_state to COMPLETED, task to empty, status to UPDATED and end the session"
+        "text": "NO: Thank the user, set the parameters task to empty and end the conversation"
       } ]
     } ]
   },

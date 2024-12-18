@@ -43,8 +43,6 @@
   "playbookOutput": {
     "executionSummary": "The agent provided answers to related to the financial performance of Alphabet",
     "actionParameters": {
-      "conversation-state": "COMPLETED",
-      "status": "UPDATED",
       "task": ""
     }
   },
