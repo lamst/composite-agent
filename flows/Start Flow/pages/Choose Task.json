@@ -19,15 +19,10 @@
     } ]
   },
   "entryFulfillment": {
-    "messages": [ {
-      "text": {
-        "text": [ "Hi there, I am a demo conversational agent with the following capabilities:\n\n-  Tell you about the financial performance of Alphabet\n-  Provide weather forecast\n\nPlease let me know which you'd like to experience." ]
-      },
-      "languageCode": "en"
-    } ]
+  
   },
   "transitionRoutes": [ {
-    "condition": "$session.params.conversation-state = \"COMPLETED\"",
+    "condition": "$session.params.conversation-state = COMPLETED",
     "triggerFulfillment": {
       "messages": [ {
         "text": {

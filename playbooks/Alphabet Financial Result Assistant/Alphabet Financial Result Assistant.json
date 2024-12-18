@@ -27,8 +27,7 @@
       }
     }
   } ],
-  "tokenCount": 228,
-  "referencedFlows": [ "End Flow" ],
+  "tokenCount": 192,
   "referencedTools": [ "alphabet_financials" ],
   "ragSettings": {
     "enableRag": true,
@@ -46,7 +45,7 @@
       "steps": [ {
         "text": "YES: start over and ask for the next question about the financial performance of Alphabet"
       }, {
-        "text": "NO: Thank the user, set the conversation_state to COMPLETED, task to empty, status to UPDATED, end the conversation and go to ${FLOW:End Flow}"
+        "text": "NO: Thank the user, set the parameters conversation_state to COMPLETED, task to empty, status to UPDATED and end the session"
       } ]
     } ]
   },

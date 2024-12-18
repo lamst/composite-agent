@@ -36,18 +36,6 @@
     "agentUtterance": {
       "text": "Feel free to reach out if you need."
     }
-  }, {
-    "flowInvocation": {
-      "flow": "End Flow",
-      "inputActionParameters": {
-        "conversation-state": "COMPLETED",
-        "status": "UPDATED",
-        "task": ""
-      },
-      "outputActionParameters": {
-      
-      }
-    }
   } ],
   "playbookInput": {
     "precedingConversationSummary": "The user wants to find out the financial results of Alphabet."

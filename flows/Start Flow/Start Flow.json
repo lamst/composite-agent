@@ -5,7 +5,12 @@
   "transitionRoutes": [ {
     "intent": "Default Welcome Intent",
     "triggerFulfillment": {
-    
+      "messages": [ {
+        "text": {
+          "text": [ "Hi there, I am a demo conversational agent with the following capabilities:\n\n-  Tell you about the financial performance of Alphabet\n-  Provide weather forecast\n\nPlease let me know which you'd like to experience." ]
+        },
+        "languageCode": "en"
+      } ]
     },
     "targetPage": "Choose Task",
     "name": "d5bfe416-c588-4fa5-b142-842ebf8a3067"
